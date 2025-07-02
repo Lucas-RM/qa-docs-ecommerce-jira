@@ -53,14 +53,16 @@ Mapa mental representando a User Story **"Adicionar Produto ao Carrinho"**, com 
 
 ---
 
-### ✅ Casos de Teste
+### ✅ Casos de Teste `XMl`
 - **`Step-by-Step`**:
-  - Fluxo feliz de adicionar produto ao carrinho
-  - Validação de limite de quantidade permitida
+  - Fluxo de adicionar produto ao carrinho. Clique [aqui](https://github.com/Lucas-RM/qa-docs-ecommerce-jira/blob/main/Casos%20de%20Teste/ECV01-T2.xml) para acessar
+  - Validação de limite de quantidade permitida Clique [aqui](https://github.com/Lucas-RM/qa-docs-ecommerce-jira/blob/main/Casos%20de%20Teste/ECV01-T3.xml) para acessar
 
 - **`BDD (Gherkin)`**:
-  - Cenário de sucesso na adição de produto
-  - Cenário de erro: produto sem estoque
+  - Cenário de sucesso na adição de produto Clique [aqui](https://github.com/Lucas-RM/qa-docs-ecommerce-jira/blob/main/Casos%20de%20Teste/ECV01-T4.xml) para acessar
+  - Cenário de erro: produto sem estoque Clique [aqui](https://github.com/Lucas-RM/qa-docs-ecommerce-jira/blob/main/Casos%20de%20Teste/ECV01-T5.xml) para acessar
+
+Clique [aqui](https://github.com/Lucas-RM/qa-docs-ecommerce-jira/blob/main/Casos%20de%20Teste/todos-os-casos-de-teste.xml) para acessar o `XML` de todos os casos de teste em conjunto.
 
 📄 Relatórios em `pdf`:
 - Clique para acessar: [`Relatório de rastreabilidade`](https://github.com/Lucas-RM/qa-docs-ecommerce-jira/blob/main/Relat%C3%B3rios%20dos%20Testes/Relat%C3%B3rio%20de%20rastreabilidade.pdf)
