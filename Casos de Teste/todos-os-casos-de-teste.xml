@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10033</projectId>
+    <projectKey>ECV01</projectKey>
+    <exportDate>2025-07-02 03:50:51 UTC</exportDate>
+    <folders>
+        <folder fullPath="Carrinho de produtos" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="245822984" key="ECV01-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Marcondes</createdBy>
+            <createdOn>2025-07-02 01:22:49 UTC</createdOn>
+            <customFields/>
+            <estimatedTime>120000</estimatedTime>
+            <folder><![CDATA[Carrinho de produtos]]></folder>
+            <issues/>
+            <labels>
+                <label><![CDATA[carrinho]]></label>
+                <label><![CDATA[frontend]]></label>
+                <label><![CDATA[funcional]]></label>
+                <label><![CDATA[ecommerce]]></label>
+            </labels>
+            <name><![CDATA[Adicionar Produto ao Carrinho]]></name>
+            <objective><![CDATA[Adicionar um produto ao carrinho com sucesso]]></objective>
+            <owner>70121:a96dc683-7b41-48ad-95da-d756a32aadfc</owner>
+            <precondition><![CDATA[<strong id="isPasted">Precondi&ccedil;&otilde;es</strong>: Produto dispon&iacute;vel, usu&aacute;rio na tela de produto<br><br><strong>Passos:</strong><br><table id="isPasted"><thead><tr><th style="width: 9.0225%;">Step #</th><th style="width: 28.3865%;">Test Step</th><th>Test Data</th><th>Expected Result</th></tr></thead><tbody><tr><td style="width: 9.0225%;">1</td><td style="width: 28.3865%;">Acessar a p&aacute;gina do produto</td><td>Produto: Camiseta</td><td>P&aacute;gina do produto &eacute; exibida</td></tr><tr><td style="width: 9.0225%;">2</td><td style="width: 28.3865%;">Clicar em &quot;Adicionar ao Carrinho&quot;</td><td>-</td><td>Produto &eacute; adicionado ao carrinho</td></tr><tr><td style="width: 9.0225%;">3</td><td style="width: 28.3865%;">Abrir o carrinho</td><td>-</td><td>Produto aparece com nome, pre&ccedil;o e quantidade = 1</td></tr></tbody></table>]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar a p&aacute;gina do produto]]></description>
+                        <expectedResult><![CDATA[P&aacute;gina do produto &eacute; exibida corretamente]]></expectedResult>
+                        <testData><![CDATA[Produto: Camiseta]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Clicar em &ldquo;Adicionar ao Carrinho&rdquo;]]></description>
+                        <expectedResult><![CDATA[Produto &eacute; adicionado ao carrinho com sucesso]]></expectedResult>
+                        <testData><![CDATA[-]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Clicar no &iacute;cone do carrinho no topo da p&aacute;gina]]></description>
+                        <expectedResult><![CDATA[Produto aparece no carrinho com nome, pre&ccedil;o e quantidade = 1]]></expectedResult>
+                        <testData><![CDATA[-]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="245823132" key="ECV01-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Marcondes</createdBy>
+            <createdOn>2025-07-02 01:36:36 UTC</createdOn>
+            <customFields/>
+            <estimatedTime>180000</estimatedTime>
+            <folder><![CDATA[Carrinho de produtos]]></folder>
+            <issues/>
+            <labels>
+                <label><![CDATA[limite]]></label>
+                <label><![CDATA[validação]]></label>
+                <label><![CDATA[restrição]]></label>
+                <label><![CDATA[quantidade]]></label>
+            </labels>
+            <name><![CDATA[Limite de Quantidade no Carrinho]]></name>
+            <objective><![CDATA[Validar o limite de produtos adicionados ao carrinho.]]></objective>
+            <owner>70121:a96dc683-7b41-48ad-95da-d756a32aadfc</owner>
+            <precondition><![CDATA[<p><strong>Precondi&ccedil;&otilde;es</strong>: Produto dispon&iacute;vel, usu&aacute;rio logado</p><br><p><strong>Passos:</strong></p><table id="isPasted"><thead><tr><th style="width: 9.2465%;">Step #</th><th style="width: 28.5992%;">Test Step</th><th>Test Data</th><th>Expected Result</th></tr></thead><tbody><tr><td style="width: 9.2465%;">1</td><td style="width: 28.5992%;">Adicionar o produto ao carrinho 10x</td><td>Quantidade: 10</td><td>Carrinho mostra 10 unidades do produto</td></tr><tr><td style="width: 9.2465%;">2</td><td style="width: 28.5992%;">Tentar adicionar mais 1 unidade</td><td>Quantidade: 11</td><td>Mensagem &quot;Limite de 10 unidades por produto&quot; &eacute; exibida</td></tr></tbody></table><br>]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Adicionar o produto ao carrinho 10 vezes]]></description>
+                        <expectedResult><![CDATA[Carrinho mostra 10 unidades do produto]]></expectedResult>
+                        <testData><![CDATA[Produto: Fone de ouvido]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Tentar adicionar o mesmo produto pela 11&ordf; vez]]></description>
+                        <expectedResult><![CDATA[Exibir mensagem: &quot;Quantidade m&aacute;xima permitida: 10 unidades&quot;]]></expectedResult>
+                        <testData><![CDATA[Quantidade: 11]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="245823292" key="ECV01-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Marcondes</createdBy>
+            <createdOn>2025-07-02 01:41:43 UTC</createdOn>
+            <customFields/>
+            <estimatedTime>120000</estimatedTime>
+            <folder><![CDATA[Carrinho de produtos]]></folder>
+            <issues/>
+            <labels>
+                <label><![CDATA[carrinho]]></label>
+                <label><![CDATA[sucesso]]></label>
+                <label><![CDATA[produto]]></label>
+            </labels>
+            <name><![CDATA[Adicionar Produto com Sucesso]]></name>
+            <objective><![CDATA[Usar formato Gherkin para testar o fluxo principal.]]></objective>
+            <owner>70121:a96dc683-7b41-48ad-95da-d756a32aadfc</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given o cliente está na página de um produto disponível
+When ele clicar em "Adicionar ao Carrinho"
+Then o produto deve aparecer no carrinho com quantidade igual a 1]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="245823377" key="ECV01-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Marcondes</createdBy>
+            <createdOn>2025-07-02 01:44:33 UTC</createdOn>
+            <customFields/>
+            <estimatedTime>120000</estimatedTime>
+            <folder><![CDATA[Carrinho de produtos]]></folder>
+            <issues/>
+            <labels>
+                <label><![CDATA[validação]]></label>
+                <label><![CDATA[estoque]]></label>
+                <label><![CDATA[erro]]></label>
+                <label><![CDATA[indisponível]]></label>
+            </labels>
+            <name><![CDATA[Produto Sem Estoque]]></name>
+            <objective><![CDATA[Validar cen&aacute;rio de erro por falta de estoque.]]></objective>
+            <owner>70121:a96dc683-7b41-48ad-95da-d756a32aadfc</owner>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given o estoque do produto é igual a 0
+When o cliente tenta adicioná-lo ao carrinho
+Then uma mensagem "Produto indisponível no momento" deve ser exibida]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>

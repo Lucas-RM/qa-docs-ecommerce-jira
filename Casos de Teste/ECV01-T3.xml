@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10033</projectId>
+    <projectKey>ECV01</projectKey>
+    <exportDate>2025-07-02 03:55:47 UTC</exportDate>
+    <folders>
+        <folder fullPath="Carrinho de produtos" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="245823132" key="ECV01-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Marcondes</createdBy>
+            <createdOn>2025-07-02 01:36:36 UTC</createdOn>
+            <customFields/>
+            <estimatedTime>180000</estimatedTime>
+            <folder><![CDATA[Carrinho de produtos]]></folder>
+            <issues/>
+            <labels>
+                <label><![CDATA[limite]]></label>
+                <label><![CDATA[validação]]></label>
+                <label><![CDATA[restrição]]></label>
+                <label><![CDATA[quantidade]]></label>
+            </labels>
+            <name><![CDATA[Limite de Quantidade no Carrinho]]></name>
+            <objective><![CDATA[Validar o limite de produtos adicionados ao carrinho.]]></objective>
+            <owner>70121:a96dc683-7b41-48ad-95da-d756a32aadfc</owner>
+            <precondition><![CDATA[<p><strong>Precondi&ccedil;&otilde;es</strong>: Produto dispon&iacute;vel, usu&aacute;rio logado</p><br><p><strong>Passos:</strong></p><table id="isPasted"><thead><tr><th style="width: 9.2465%;">Step #</th><th style="width: 28.5992%;">Test Step</th><th>Test Data</th><th>Expected Result</th></tr></thead><tbody><tr><td style="width: 9.2465%;">1</td><td style="width: 28.5992%;">Adicionar o produto ao carrinho 10x</td><td>Quantidade: 10</td><td>Carrinho mostra 10 unidades do produto</td></tr><tr><td style="width: 9.2465%;">2</td><td style="width: 28.5992%;">Tentar adicionar mais 1 unidade</td><td>Quantidade: 11</td><td>Mensagem &quot;Limite de 10 unidades por produto&quot; &eacute; exibida</td></tr></tbody></table><br>]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Adicionar o produto ao carrinho 10 vezes]]></description>
+                        <expectedResult><![CDATA[Carrinho mostra 10 unidades do produto]]></expectedResult>
+                        <testData><![CDATA[Produto: Fone de ouvido]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Tentar adicionar o mesmo produto pela 11&ordf; vez]]></description>
+                        <expectedResult><![CDATA[Exibir mensagem: &quot;Quantidade m&aacute;xima permitida: 10 unidades&quot;]]></expectedResult>
+                        <testData><![CDATA[Quantidade: 11]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>

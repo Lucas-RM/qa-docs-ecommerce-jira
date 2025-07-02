@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10033</projectId>
+    <projectKey>ECV01</projectKey>
+    <exportDate>2025-07-02 03:55:58 UTC</exportDate>
+    <folders>
+        <folder fullPath="Carrinho de produtos" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="245823377" key="ECV01-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Marcondes</createdBy>
+            <createdOn>2025-07-02 01:44:33 UTC</createdOn>
+            <customFields/>
+            <estimatedTime>120000</estimatedTime>
+            <folder><![CDATA[Carrinho de produtos]]></folder>
+            <issues/>
+            <labels>
+                <label><![CDATA[validação]]></label>
+                <label><![CDATA[estoque]]></label>
+                <label><![CDATA[erro]]></label>
+                <label><![CDATA[indisponível]]></label>
+            </labels>
+            <name><![CDATA[Produto Sem Estoque]]></name>
+            <objective><![CDATA[Validar cen&aacute;rio de erro por falta de estoque.]]></objective>
+            <owner>70121:a96dc683-7b41-48ad-95da-d756a32aadfc</owner>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given o estoque do produto é igual a 0
+When o cliente tenta adicioná-lo ao carrinho
+Then uma mensagem "Produto indisponível no momento" deve ser exibida]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>

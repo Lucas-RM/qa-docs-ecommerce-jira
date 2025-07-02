@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10033</projectId>
+    <projectKey>ECV01</projectKey>
+    <exportDate>2025-07-02 03:55:34 UTC</exportDate>
+    <folders>
+        <folder fullPath="Carrinho de produtos" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="245823292" key="ECV01-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Lucas Marcondes</createdBy>
+            <createdOn>2025-07-02 01:41:43 UTC</createdOn>
+            <customFields/>
+            <estimatedTime>120000</estimatedTime>
+            <folder><![CDATA[Carrinho de produtos]]></folder>
+            <issues/>
+            <labels>
+                <label><![CDATA[carrinho]]></label>
+                <label><![CDATA[sucesso]]></label>
+                <label><![CDATA[produto]]></label>
+            </labels>
+            <name><![CDATA[Adicionar Produto com Sucesso]]></name>
+            <objective><![CDATA[Usar formato Gherkin para testar o fluxo principal.]]></objective>
+            <owner>70121:a96dc683-7b41-48ad-95da-d756a32aadfc</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given o cliente está na página de um produto disponível
+When ele clicar em "Adicionar ao Carrinho"
+Then o produto deve aparecer no carrinho com quantidade igual a 1]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
