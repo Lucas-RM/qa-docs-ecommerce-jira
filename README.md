@@ -32,7 +32,7 @@ O projeto foi desenvolvido com base em um sistema de **E-Commerce**, aplicando b
 
 ### ✅ Plano de Fluxo de Trabalho + Ciclo de Vida do Bug
 - Documento explicando como funciona o fluxo de trabalho do time de desenvolvimento e o ciclo de vida de um **bug**, desde sua identificação até a resolução.
-- 📄 Acesse aqui a Issue do tipo `bug`: [`[#ECV01-5] - Bug.pdf`](https://github.com/Lucas-RM/qa-docs-ecommerce-jira/blob/main/Bug/ECV01-5%20-%20Bug.pdf)
+- 📄 Acesse aqui a Issue do tipo `bug`: [`[#ECV01-5] - Bug.pdf`](https://github.com/Lucas-RM/qa-docs-ecommerce-jira/blob/main/Bug/%5B%23ECV01-5%5D%20-%20Bug.pdf)
 
 ---
 
